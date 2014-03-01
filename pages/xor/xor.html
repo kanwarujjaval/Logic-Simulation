@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>xor</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="xor.css" rel="stylesheet" />
+    <script src="xor.js"></script>
+    <link href="/css/stylesheet.css" rel="stylesheet" />
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <div class="hubpage fragment">
+        <header aria-label="Header content" role="banner">
+            <button data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">XOR Gate</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+
+            <div class="hub" data-win-control="WinJS.UI.Hub" style="left: -50px; top: 43px;">
+
+
+                <div class="section1" data-win-control="WinJS.UI.HubSection" data-win-options="{
+            header: 'Basics',
+            isHeaderStatic: true
+        }">
+                    <ul>
+                        <li>
+                            <p>The XOR gate operation is also called Exclusive OR Gate.</p>
+                        </li>
+                        <li>
+                            <p>Output of XOR gate will be 1 (high) when only one of the inputs is 1 (high) and one is 0 (low).</p>
+                        </li>
+                        <li>
+                            <p>It is denoted as x=(A^B) or x=(A+B).(A'+B') in Boolean algebra, which means that x equals A XOR B.</p>
+                        </li>
+                        <li>
+                            <p>Standard Symbol for XOR Gate</p>
+                            <img src="/images/xor.png" draggable="false" style="width:220px;height:135px;">
+                        </li>
+                        <li>
+                            <p>IEC Symbol for XOR Gate</p>
+                            <img src="/images/xoriec.png" draggable="false" style="width:220px;height:135px;">
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="sectionsim" data-win-control="WinJS.UI.HubSection" data-win-options="{
+            header: 'Simulation',
+            isHeaderStatic: true
+        }">
+
+                    <p>The mathematical formula used for the gate is x=(A+B).(A'+B').</p>
+
+                    <div class="onoffswitch" style="top: 60px; left: 0px;">
+                        <input type="checkbox" onclick="Gate('xor')" name="onoffswitch" class="onoffswitch-checkbox" id="switch1" checked>
+                        <label class="onoffswitch-label" for="switch1">
+                            <div class="onoffswitch-inner"></div>
+                            <div class="onoffswitch-switch"></div>
+                        </label>
+                    </div>
+
+
+                    <img style="position:relative; width: 273px; height: 178px; top: -2px; left: 90px;" src="/images/xor.png" draggable="false">
+
+                    <div class="onoffswitch" style="top: -70px; left: 0px;">
+                        <input type="checkbox" onclick="Gate('xor')" name="onoffswitch" class="onoffswitch-checkbox" id="switch2" checked>
+                        <label class="onoffswitch-label" for="switch2">
+                            <div class="onoffswitch-inner"></div>
+                            <div class="onoffswitch-switch"></div>
+                        </label>
+                    </div>
+
+                    <h3>The Truth table is given as</h3>
+                    <div style="position:relative; left: 0px; top: 24px;" id="input1">
+                        <p>Input 1 | TRUE</p>
+                    </div>
+
+
+                    <div style="position:relative; top: 56px; left: 0px;" id="input2">
+                        <p>Input 2 | TRUE</p>
+                    </div>
+
+                    <div style="position:relative; left: 226px; top: -13px; width: 156px;" id="op">
+                        <p>Output | FALSE</p>
+                    </div>
+                    <div id="outputbox" class="outputboxFalse" style="left: 363px; top: -295px;"></div>
+                </div>
+
+
+            </div>
+
+
+        </section>
+    </div>
+</body>
+</html>

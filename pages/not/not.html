@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>not</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="not.css" rel="stylesheet" />
+    <script src="not.js"></script>
+    <link href="/css/stylesheet.css" rel="stylesheet" />
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <div class="hubpage fragment">
+        <header aria-label="Header content" role="banner">
+            <button data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">NOT Gate</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div class="hub" data-win-control="WinJS.UI.Hub" style="left: -50px; top: 43px;">
+
+
+                <div class="section1" data-win-control="WinJS.UI.HubSection" data-win-options="{
+            header: 'Basics',
+            isHeaderStatic: true
+        }">
+                    <ul>
+                        <li>
+                            <p>
+                                The NOT gate is also called Inverter as it
+
+                                gives the compliment of the input.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Output of NOT gate will be 1 (high) when input
+
+                                is 0 (low) and vice versa.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                It is denoted x=A' in Boolean algebra, which
+
+                                means that x equals NOT A.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Standard Symbol for NOT Gate</p>
+                            <img src="/images/not.png" draggable="false" style="width:220px;height:135px;">
+                        </li>
+                        <li>
+                            <p>IEC Symbol for NOT Gate</p>
+                            <img src="/images/notiec.png" draggable="false" style="width:220px;height:135px;">
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="sectionsim" data-win-control="WinJS.UI.HubSection" data-win-options="{
+            header: 'Simulation',
+            isHeaderStatic: true
+        }">
+
+                    <p>The mathematical formula used for the gate is x=A'.</p>
+
+                    <div class="onoffswitch" style="top: 104px; left: 0px;">
+                        <input type="checkbox" onclick="not()" name="onoffswitch" class="onoffswitch-checkbox" id="switch1" checked>
+                        <label class="onoffswitch-label" for="switch1">
+                            <div class="onoffswitch-inner"></div>
+                            <div class="onoffswitch-switch"></div>
+                        </label>
+                    </div>
+
+
+                    <img style="position:relative; width: 273px; height: 178px; top: -2px; left: 90px;" src="/images/not.png" draggable="false">
+
+
+                    <h3>The Truth table is given as</h3>
+                    <div style="position:relative; left: 0px; top: 24px;" id="input1">
+                        <p>Input 1 | TRUE</p>
+                    </div>
+
+
+                    <div style="position:relative; left: 226px; top: -13px; width: 156px;" id="op">
+                        <p>Output | FALSE</p>
+                    </div>
+                    <div id="outputbox" class="outputboxFalse" style="left: 364px; top: -226px;"></div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>

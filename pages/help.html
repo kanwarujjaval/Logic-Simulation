@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Settings</title>
+</head>
+<body>
+    <!-- BEGINTEMPLATE: Template code for an empty Help Flyout. -->
+    <!-- Each Settings flyout should be defined in its own HTML file. -->
+    <!-- Set the width to 'narrow' for a narrow Settings flyout. -->
+    <!-- Set the background color for the header to the background color defined for your
+         app tile in the manifest. -->
+    <div id="helpDiv" data-win-control="WinJS.UI.SettingsFlyout" aria-label="Help Settings flyout"
+         data-win-options="{settingsCommandId:'help'}">
+        <div class="win-header" style="background-color: #1abc9c;">
+            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+            <div class="win-label">Help</div>
+        </div>
+        <div class="win-content">
+           
+                <h3>Basic</h3>
+            <ul>
+                <li>
+                    <p>The Infromation about the gates can be accessed by selecting the Gate from home Screen.</p>
+                </li>
+                </ul>
+                <h3>Simulations</h3>
+                <ul>
+                    <li><p>The Simulations are run by clicking on the Input switches</p></li>
+                    <li><p>The color Red denotes 0, False or LOW value of Input</p></li>
+                    <li><p>The color Green denotes 1, True or High value of Input</p></li>
+                </ul>
+                <h3>Notations</h3>
+                <ul>
+                    <li><p>The Symbol <strong>'</strong> denotes the compliment or Inverted value of any input</p></li>
+                    <li><p>In the equations of Logic Gates, <strong>x</strong> is assumed to be the output of the gate.</p></li>
+                </ul>
+</div>
+    </div>
+
+    <div id="aboutDiv" data-win-control="WinJS.UI.SettingsFlyout" aria-label="About Settings flyout"
+         data-win-options="{settingsCommandId:'about'}">
+        <div class="win-header" style="background-color: #1abc9c">
+            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+            <div class="win-label">About</div>
+        </div>
+        <div class="win-content">
+           <h3>Logic Simulation</h3>
+            <p>This app is Created by <strong>Kanwar Ujjaval Singh</strong></p><p>This app is targeted for High School Electronics students who may wish to learn the basic concepts of Logic Gates.</p>
+            <p>You may contact me through <a href="http://rudrageek.com/logic-simulation-app/">App Home Page</a>.</p>
+            <p><small><a href="http://rudrageek.com/logic-simulation-privacy/">View the App Privacy Policy</a></small></p>
+        </div>
+    </div>
+    <!-- ENDTEMPLATE -->
+</body>
+</html>

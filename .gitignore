@@ -1,0 +1,14 @@
+target
+.settings/*
+!.settings/.jsdtscope
+node_modules/**/*
+AppPackages/**/*
+bin/**/*
+bld/**/*
+.project
+.classpath
+*.njsproj
+*.sln
+*.suo
+*.pfx
+desktop.ini

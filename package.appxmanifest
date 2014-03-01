@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
+  <Identity Name="52768ujjaval.LogicSimulation" Version="1.2.7.4" Publisher="CN=0ADD088A-518D-417A-B2FB-14DF2B7CE5B4" />
+  <Properties>
+    <DisplayName>Logic Simulation</DisplayName>
+    <PublisherDisplayName>KanwarUjjavalSingh</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="Logic Simulation" Description="Basic Logic Simulation for understanding High School Electronics" ForegroundText="light" BackgroundColor="#1abc9c" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
+        <m2:DefaultTile ShortName="Logic Simulation" DefaultSize="square150x150Logo">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="images\splashscreen.png" BackgroundColor="#1abc9c" />
+        <m2:ApplicationView MinWidth="width500" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <build:Metadata>
+    <build:Item Name="Blend" Version="12.0.41002.1" />
+  </build:Metadata>
+</Package>
